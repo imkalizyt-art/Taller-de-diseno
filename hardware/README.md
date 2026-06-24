@@ -1,6 +1,6 @@
 # Hardware
 
-En esta carpeta se guardarán:
+En esta carpeta se encuentra:
 
 - Esquemático del circuito.
 - Lista de materiales y costos.
