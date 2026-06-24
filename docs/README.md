@@ -1,6 +1,6 @@
 # Documentación
 
-En esta carpeta se guardarán:
+En esta carpeta se encuentra:
 
 * Informe final del proyecto.
 * Presentación utilizada en la evaluación.
