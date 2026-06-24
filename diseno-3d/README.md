@@ -1,8 +1,8 @@
 # Diseño 3D
 
-En esta carpeta se guardarán:
+En esta carpeta se encuentra:
 
-- Archivo editable de Fusion 360.
+- Archivos de Fusion 360.
 - Planos técnicos.
-- Renders exteriores e interiores.
-- Modelo del encapsulado y componentes internos.
+- Renders exteriores.
+- Modelo del encapsulado.
