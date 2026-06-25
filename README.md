@@ -109,7 +109,3 @@ Las mediciones se registran en tres campos:
 - **Field 1:** Valor ADC crudo (0–1023)
 - **Field 2:** Porcentaje de humedad calculado (0–100%)
 - **Field 3:** Estado de alerta (0 = húmedo, 1 = seco)
-
-## Fuentes y atribuciones
-
-Ver archivo [`FUENTES.md`](./FUENTES.md) para el detalle completo de librerías, versiones, código externo adaptado y uso de inteligencia artificial.
