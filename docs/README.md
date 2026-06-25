@@ -9,7 +9,6 @@
 
 El sistema monitorea la humedad del suelo de forma autónoma mediante conexion a wifi, notifica al jardinero por Telegram cuando el suelo necesita riego. Funciona con batería recargable y panel solar, por lo que no requiere conexión a la red eléctrica.
 
-
 ## 2. Componentes del sistema
 
  Componente  Función 
@@ -21,7 +20,6 @@ El sistema monitorea la humedad del suelo de forma autónoma mediante conexion a
  Módulo TP4056  Controla la carga de la batería de forma segura 
 
 
-
 ## 3. Encendido del sistema
 
 1. Asegurarse de que la batería esté cargada (el LED del TP4056 debe estar azul o verde)
@@ -29,7 +27,6 @@ El sistema monitorea la humedad del suelo de forma autónoma mediante conexion a
 3. El ESP8266 enciende automáticamente y se conecta al WiFi configurado
 4. Esperar aproximadamente **10–15 segundos** para que establezca conexión
 5. El sistema comienza a medir y enviar datos a ThingSpeak de inmediato
-
 
 ## 4. Mensajes de Telegram
 
@@ -46,13 +43,10 @@ Se envía cuando la humedad baja del 35%.
 🌧️ Pronóstico lluvia próximos 5 días: No se esperan lluvias
 ✅ Recomendación: Regar hoy
 📈 Ver historial: https://thingspeak.mathworks.com/channels/3416600
-
 ### 🔁 Recordatorio periódico
 Si el suelo sigue seco después de 10 minutos, se envía un recordatorio con los datos actualizados.
-
 ### 🟢 Confirmación de suelo húmedo
 Se envía automáticamente cuando la humedad vuelve a superar el 35% tras haber estado seca.
-
 ✅ Suelo húmedo — No se requiere riego
 
 💧 Humedad actual: 61%
