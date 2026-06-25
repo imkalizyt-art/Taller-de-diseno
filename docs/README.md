@@ -2,7 +2,7 @@
 
 **Proyecto:** Sistema IoT de monitoreo de humedad del suelo  
 **Ramo:** TEI 201 — Taller de Diseño en Ingeniería  
-**Equipo:** Enzo Quiñones, Agustín Lastra, Matías Pineda, Carlos León
+**Integrantes:** Enzo Quiñones, Agustín Lastra, Matías Pineda, Carlos León
 
 
 ## 1. Descripción general
