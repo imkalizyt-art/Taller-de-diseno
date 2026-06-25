@@ -55,18 +55,18 @@ Este archivo registra las librerías, códigos externos y herramientas de inteli
 
  Diseño de arquitectura del sistema
 
- *Herramienta:** Claude (Anthropic) — claude.ai
- *Fecha:* junio de 2026
- *Uso:* plantear la arquitectura de comunicación entre sensor capacitivo, ESP8266, ThingSpeak, OpenWeatherMap y Telegram Bot.
- *Adaptación:* el equipo ajustó la estructura según el hardware real disponible (NodeMCU V3, sensor V1.2, batería Li-Po con TP4056 y panel solar 6V 1W).
- *Comprensión:* cada componente de la arquitectura fue revisado y comprendido antes de implementarlo en el prototipo físico.
+ **Herramienta:** Claude (Anthropic) — claude.ai
+ **Fecha:** junio de 2026
+ **Uso:** plantear la arquitectura de comunicación entre sensor capacitivo, ESP8266, ThingSpeak, OpenWeatherMap y Telegram Bot.
+ **Adaptación:** el equipo ajustó la estructura según el hardware real disponible (NodeMCU V3, sensor V1.2, batería Li-Po con TP4056 y panel solar 6V 1W).
+ **Comprensión:** cada componente de la arquitectura fue revisado y comprendido antes de implementarlo en el prototipo físico.
 
 # Desarrollo, depuración y explicación del código
 
  **Herramienta:** Claude (Anthropic) — claude.ai
  **Fecha:** junio de 2026
  **Uso:** generación, explicación y corrección del código principal (`main.ino`), incluyendo migración de ESP32 a ESP8266, implementación del sistema de alertas Telegram con tres estados, integración NTP, y sistema anti-spam con `millis()`.
-- **Adaptación:** el equipo definió los valores de calibración (`SENSOR_SECO`, `SENSOR_AGUA`) mediante medición real, ajustó el umbral de humedad al 35% según las necesidades del cultivo, y configuró las credenciales WiFi, tokens de Telegram, ThingSpeak y OpenWeatherMap.
+ **Adaptación:** el equipo definió los valores de calibración (`SENSOR_SECO`, `SENSOR_AGUA`) mediante medición real, ajustó el umbral de humedad al 35% según las necesidades del cultivo, y configuró las credenciales WiFi, tokens de Telegram, ThingSpeak y OpenWeatherMap.
  **Comprensión:** el funcionamiento fue verificado mediante Monitor Serial de Arduino IDE, dashboard de ThingSpeak y recepción real de alertas en Telegram.
 
 
