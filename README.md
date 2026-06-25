@@ -64,29 +64,27 @@ Ir a **Herramientas → Administrar bibliotecas** e instalar:
 - `NTPClient` (Fabrice Weinberg)
 
 ### 2. Configurar credenciales en `firmware/main.ino`
-
-```cpp
-// WiFi
+ WiFi
 const char* ssid     = "TU_RED_WIFI";
 const char* password = "TU_CONTRASEÑA";
 
-// Telegram
+ Telegram
 #define BOT_TOKEN   "TOKEN_DE_BOTFATHER"
 #define CHAT_ID     "TU_CHAT_ID"
 
-// ThingSpeak
+ ThingSpeak
 unsigned long channelID = TU_CHANNEL_ID;
 const char* writeAPIKey = "TU_API_KEY";
 
-// OpenWeatherMap
+ OpenWeatherMap
 String apiKey   = "TU_API_KEY";
 String city     = "Santiago";
 String countryCode = "CL";
 
-// Calibración del sensor (ajustar según medición real)
+ Calibración del sensor (ajustar según medición real)
 #define SENSOR_SECO 820   // Valor ADC en aire
 #define SENSOR_AGUA 390   // Valor ADC sumergido en agua
-```
+
 
 ### 3. Cargar el firmware
 
