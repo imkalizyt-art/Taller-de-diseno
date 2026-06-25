@@ -32,22 +32,22 @@ El sistema monitorea la humedad del suelo de forma autónoma mediante conexion a
 
 El sistema envía tres tipos de mensajes automáticos:
 
-### 🔴 Alerta de suelo seco
-Se envía cuando la humedad baja del 35%.
+### Alerta de suelo seco
+- Se envía cuando la humedad baja del 35%.
 
 🚨 ALERTA: Suelo seco detectado
 
-💧 Humedad: 22%
-📊 Valor ADC: 714
-🕐 Hora: 14:32:05 UTC
-🌧️ Pronóstico lluvia próximos 5 días: No se esperan lluvias
-✅ Recomendación: Regar hoy
-📈 Ver historial: https://thingspeak.mathworks.com/channels/3416600
-### 🔁 Recordatorio periódico
-Si el suelo sigue seco después de 10 minutos, se envía un recordatorio con los datos actualizados.
+- 💧 Humedad: 22%
+- Valor ADC: 714
+- 🕐 Hora: 14:32:05 UTC
+- 🌧️ Pronóstico lluvia próximos 5 días: No se esperan lluvias
+- ✅ Recomendación: Regar hoy
+- Ver historial: https://thingspeak.mathworks.com/channels/3416600
+###  Recordatorio periódico
+- Si el suelo sigue seco después de 10 minutos, se envía un recordatorio con los datos actualizados.
 ### 🟢 Confirmación de suelo húmedo
 Se envía automáticamente cuando la humedad vuelve a superar el 35% tras haber estado seca.
-✅ Suelo húmedo — No se requiere riego
+- Suelo húmedo — No se requiere riego
 
 💧 Humedad actual: 61%
 🕐 Hora: 15:10:22 UTC
