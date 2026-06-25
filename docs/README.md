@@ -30,8 +30,6 @@ El sistema monitorea la humedad del suelo de forma autónoma mediante conexion a
 4. Esperar aproximadamente **10–15 segundos** para que establezca conexión
 5. El sistema comienza a medir y enviar datos a ThingSpeak de inmediato
 
-> **Indicador de funcionamiento:** si el LED del NodeMCU parpadea brevemente cada cierto tiempo, el sistema está operando correctamente.
-
 
 ## 4. Mensajes de Telegram
 
@@ -48,7 +46,6 @@ Se envía cuando la humedad baja del 35%.
 🌧️ Pronóstico lluvia próximos 5 días: No se esperan lluvias
 ✅ Recomendación: Regar hoy
 📈 Ver historial: https://thingspeak.mathworks.com/channels/3416600
-```
 
 ### 🔁 Recordatorio periódico
 Si el suelo sigue seco después de 10 minutos, se envía un recordatorio con los datos actualizados.
@@ -56,14 +53,11 @@ Si el suelo sigue seco después de 10 minutos, se envía un recordatorio con los
 ### 🟢 Confirmación de suelo húmedo
 Se envía automáticamente cuando la humedad vuelve a superar el 35% tras haber estado seca.
 
-```
 ✅ Suelo húmedo — No se requiere riego
 
 💧 Humedad actual: 61%
 🕐 Hora: 15:10:22 UTC
-```
 
----
 
 ## 5. Ver el historial de datos
 
