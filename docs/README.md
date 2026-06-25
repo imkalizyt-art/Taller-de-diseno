@@ -87,8 +87,8 @@ Se envía automáticamente cuando la humedad vuelve a superar el 35% tras haber 
 
 ### Recalibración del sensor
 Si las lecturas de humedad parecen incorrectas:
-1. Medir el valor ADC con el sensor en aire → actualizar `SENSOR_SECO`
-2. Medir el valor ADC con el sensor en agua → actualizar `SENSOR_AGUA`
+1. Medir el valor ADC con el sensor en aire → actualizar SENSOR_SECO
+2. Medir el valor ADC con el sensor en agua → actualizar SENSOR_AGUA
 3. Cargar el firmware actualizado al ESP8266
 
 
@@ -99,7 +99,7 @@ Síntoma  Causa probable  Solución
 - No llegan mensajes a Telegram  Sin conexión WiFi  
 - Humedad siempre en 0% o 100%  Sensor descalibrado  Recalibrar con mediciones reales 
 - El sistema no enciende  Batería descargada  Conectar al cargador o esperar carga solar 
-- Mensajes repetidos muy seguidos  Bug en anti-spam  Revisar valor de `millis()` en el código 
+- Mensajes repetidos muy seguidos  Bug en anti-spam  Revisar valor de millis() en el código 
 
 
 ## 9. Apagar el sistema
