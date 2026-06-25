@@ -87,9 +87,3 @@ El módulo TP4056 gestiona la carga segura de la batería Li-Po desde el panel s
 - **Prototipado sin soldadura:** permite modificar el circuito rápidamente durante el desarrollo, depuración y ajuste de parámetros (pines, resistencias, reordenamiento de componentes) sin necesidad de herramientas de soldadura.
 - **Capacidad suficiente:** 830 puntos es el estándar para proyectos de complejidad media; permite ubicar el NodeMCU, el TP4056, el XL6009 y los cables del sensor con espacio disponible.
 - **Etapa de prototipo:** para una versión final de producción, el circuito sería transferido a una PCB, pero en etapa de prototipo universitario la protoboard es la solución estándar.
-
----
-
-## Diagrama de conexiones
-
-Ver archivo `esquematico.png` en esta misma carpeta para el diagrama de conexiones completo del circuito.
