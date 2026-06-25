@@ -18,26 +18,26 @@ Sistema IoT que monitorea la humedad del suelo y alerta a un jardinero mediante 
 
 ## Hardware utilizado
 
-| Componente | Modelo |
+ Componente  Modelo 
 
-| Microcontrolador | ESP8266 NodeMCU V3 (ESP-12E, CP2102) |
-| Sensor de humedad | Capacitive Soil Moisture Sensor V1.2 |
-| Módulo de carga | TP4056 con protección |
-| Batería | Li-Po 3.7V 2000mAh |
-| Panel solar | 6V 1W |
-| Placa de pruebas | Protoboard |
+ Microcontrolador  ESP8266 NodeMCU V3 (ESP-12E, CP2102) 
+ Sensor de humedad  Capacitive Soil Moisture Sensor V1.2 
+ Módulo de carga  TP4056 con protección 
+ Batería | Li-Po 3.7V 2000mAh 
+ Panel solar  6V 1W 
+ Placa de pruebas  Protoboard 
 
 ---
 
 ## Software y plataformas
 
-| Herramienta | Uso |
+ Herramienta  Uso 
 
-| Arduino IDE | Desarrollo y carga del firmware |
-| ThingSpeak | Dashboard y registro histórico de mediciones |
-| Telegram Bot API | Envío de alertas al jardinero |
-| OpenWeatherMap API | Pronóstico de lluvia 5 días |
-| NTP | Timestamp real en los mensajes |
+ Arduino IDE  Desarrollo y carga del firmware 
+ ThingSpeak  Dashboard y registro histórico de mediciones 
+ Telegram Bot API  Envío de alertas al jardinero 
+ OpenWeatherMap API  Pronóstico de lluvia 5 días 
+ NTP  Timestamp real en los mensajes 
 
 **Librerías principales:** `ESP8266WiFi`, `ThingSpeak`, `UniversalTelegramBot`, `ArduinoJson`, `NTPClient`
 
