@@ -41,22 +41,17 @@ Sistema IoT que monitorea la humedad del suelo y alerta a un jardinero mediante 
 
 **Librerías principales:** `ESP8266WiFi`, `ThingSpeak`, `UniversalTelegramBot`, `ArduinoJson`, `NTPClient`
 
----
 
 ## Estructura del repositorio
 
-```
 Taller-de-diseno/
-├── firmware/        # Código fuente Arduino (main.ino)
-├── hardware/        # Esquema de conexiones y lista de componentes
-├── diseno-3d/       # Archivos de diseño de carcasa (si aplica)
-├── docs/            # Documentación, capturas e informe
-├── testing/         # Resultados de pruebas del sistema
-├── FUENTES.md       # Librerías, fuentes externas e IA utilizadas
-└── README.md        # Este archivo
-```
-
----
+ firmware/        # Código fuente Arduino (main.ino)
+ hardware/        # Esquema de conexiones y lista de componentes
+diseno-3d/       # Archivos de diseño de carcasa (si aplica)
+ docs/            # Documentación, capturas e informe
+ testing/         # Resultados de pruebas del sistema
+ FUENTES.md       # Librerías, fuentes externas e IA utilizadas
+ README.md        # Este archivo
 
 ## Cómo configurar el proyecto
 
