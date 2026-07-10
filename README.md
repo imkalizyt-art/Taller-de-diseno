@@ -1,6 +1,9 @@
 # Taller-de-diseno
 
-Sistema IoT que monitorea la humedad del suelo y alerta a un jardinero mediante Telegram, con registro histórico en ThingSpeak y pronóstico de lluvia integrado.
+Sistema IoT que monitorea la humedad del suelo y alerta a un jardinero
+mediante Telegram. Las mediciones son enviadas por el ESP8266 a una API
+alojada en Railway, almacenadas en PostgreSQL de Aiven y visualizadas
+en un dashboard web personalizado. ThingSpeak se mantiene como respaldo.
 
 **Integrantes:** Enzo Quiñones, Agustín Lastra, Matías Pineda, Carlos León  
 **Ramo:** Taller de Diseño en Ingeniería — TEI 201  
