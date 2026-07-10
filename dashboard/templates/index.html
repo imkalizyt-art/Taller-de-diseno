@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monitor de Humedad del Suelo</title>
+    <meta
+        name="description"
+        content="Dashboard personalizado del sistema IoT de monitoreo de humedad del suelo."
+    >
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/styles.css') }}"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body
+    data-threshold="{{ humidity_threshold }}"
+    data-refresh-seconds="{{ refresh_seconds }}"
+>
+    <header class="topbar">
+        <div class="brand">
+            <div class="brand-icon" aria-hidden="true">🌱</div>
+            <div>
+                <p class="eyebrow">Sistema IoT</p>
+                <h1>Monitor de humedad del suelo</h1>
+            </div>
+        </div>
+
+        <div class="connection-pill" id="connectionPill">
+            <span class="status-dot"></span>
+            <span id="connectionText">Consultando dispositivo…</span>
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <section class="hero-card">
+            <div>
+                <p class="section-label">Humedad actual</p>
+                <div class="main-value">
+                    <span id="currentHumidity">--</span>
+                    <span class="unit">%</span>
+                </div>
+                <p class="updated-at">
+                    Última actualización:
+                    <strong id="lastUpdate">sin datos</strong>
+                </p>
+            </div>
+
+            <div class="hero-state">
+                <span class="state-badge neutral" id="stateBadge">Sin datos</span>
+                <p class="recommendation" id="recommendation">
+                    Esperando la primera medición del sensor.
+                </p>
+            </div>
+        </section>
+
+        <section class="metric-grid" aria-label="Resumen del sistema">
+            <article class="metric-card">
+                <p>Valor ADC</p>
+                <strong id="adcValue">--</strong>
+                <small>Rango 0–1023</small>
+            </article>
+
+            <article class="metric-card">
+                <p>Promedio 24 h</p>
+                <strong><span id="averageValue">--</span>%</strong>
+                <small id="sampleCount">0 mediciones</small>
+            </article>
+
+            <article class="metric-card">
+                <p>Mínimo 24 h</p>
+                <strong><span id="minimumValue">--</span>%</strong>
+                <small>Menor humedad registrada</small>
+            </article>
+
+            <article class="metric-card">
+                <p>Máximo 24 h</p>
+                <strong><span id="maximumValue">--</span>%</strong>
+                <small>Mayor humedad registrada</small>
+            </article>
+        </section>
+
+        <section class="content-grid">
+            <article class="chart-card">
+                <div class="card-heading">
+                    <div>
+                        <p class="section-label">Historial</p>
+                        <h2>Humedad del suelo</h2>
+                    </div>
+                    <div class="threshold-note">
+                        Umbral de riego:
+                        <strong>{{ humidity_threshold }}%</strong>
+                    </div>
+                </div>
+
+                <div class="chart-wrapper">
+                    <canvas id="humidityChart"></canvas>
+                </div>
+            </article>
+
+            <aside class="info-card">
+                <p class="section-label">Interpretación</p>
+                <h2>¿Qué decisión tomar?</h2>
+
+                <div class="decision-row">
+                    <span class="legend-dot dry"></span>
+                    <div>
+                        <strong>Bajo {{ humidity_threshold }}%</strong>
+                        <p>El suelo se considera seco y se recomienda evaluar riego.</p>
+                    </div>
+                </div>
+
+                <div class="decision-row">
+                    <span class="legend-dot adequate"></span>
+                    <div>
+                        <strong>Desde {{ humidity_threshold }}%</strong>
+                        <p>La humedad es adecuada y no se requiere riego inmediato.</p>
+                    </div>
+                </div>
+
+                <div class="system-detail">
+                    <span>Dispositivo</span>
+                    <strong id="deviceName">ESP8266</strong>
+                </div>
+
+                <div class="system-detail">
+                    <span>Actualización</span>
+                    <strong>Cada 10 segundos</strong>
+                </div>
+            </aside>
+        </section>
+
+        <p class="error-message" id="errorMessage" role="alert"></p>
+    </main>
+
+    <footer>
+        Proyecto TEI201 · Taller de Diseño en Ingeniería
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
